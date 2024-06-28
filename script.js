@@ -1,6 +1,6 @@
-const input = document.querySelector(".search_input");
-const button = document.querySelector(".search_button");
-const select = document.querySelector(".search_select");
+const input = document.querySelector(".search__input");
+const button = document.querySelector(".search__button");
+const select = document.querySelector(".search__select");
 
 button.addEventListener("click", submitRequest);
 
