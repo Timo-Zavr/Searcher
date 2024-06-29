@@ -8,6 +8,7 @@ function submitRequest(event){
     event.preventDefault();
 
     const value = input.value;
+    
     const Engine = select.value;
     
     let params;
