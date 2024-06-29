@@ -6,7 +6,11 @@
 
 body {
     height: 100vh;
+    width: 100%;
+    background-image: url(./обои.jpg);
+    background-size: cover;
     background-color: rgb(57, 72, 30);
+    background-repeat: no-repeat;
 }
 
 .search {
@@ -33,6 +37,7 @@ body {
     border: 3px solid #000000;
     background-color: rgb(61, 61, 61);
     color: rgb(84, 150, 19);
+    box-shadow: 3px 3px 3px 3px rgb(18, 18, 18);
     border-radius: 15px 0 0 15px;
     font-size: 35px;
     outline: none;
@@ -43,6 +48,7 @@ body {
     border: 3px solid #000000;
     background-color: rgb(61, 61, 61);
     color: rgb(84, 150, 19);
+    box-shadow: 3px 3px 3px 3px rgb(18, 18, 18);
     border-left: none;
     border-radius: 0 15px 15px 0;
     font-size: 35px;
@@ -55,9 +61,61 @@ body {
     border: 3px solid #000000;
     background-color: rgb(61, 61, 61);
     color: rgb(84, 150, 19);
+    box-shadow: 3px 3px 3px 3px rgb(18, 18, 18);
     border-radius: 15px;
     font-size: 35px;
     cursor: pointer;
+}
+
+@media screen and(max-width: 650px){
+
+    .search {
+        height: 100%;
+        width: 50%;
+        display: flex;
+    }
+    
+    .search__input {
+        width: 50px;
+        padding: 5px;
+        border: 2px solid #000000;
+        background-color: rgb(61, 61, 61);
+        color: rgb(84, 150, 19);
+        border-radius: 15px 0 0 15px;
+        font-size: 15px;
+        outline: none;
+    }
+
+    .search__form {
+        display: flex;
+        align-items: baseline;
+        justify-content: baseline;
+        width: 30%;
+        margin: auto;
+    }
+    
+    .search__button {
+        padding: 5px;
+        border: 2px solid #000000;
+        background-color: rgb(61, 61, 61);
+        color: rgb(84, 150, 19);
+        border-left: none;
+        border-radius: 0 15px 15px 0;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .search__select {
+        width: 50px;
+        margin-left: 10px;
+        padding: 5px;
+        border: 2px solid #000000;
+        background-color: rgb(61, 61, 61);
+        color: rgb(84, 150, 19);
+        border-radius: 15px;
+        font-size: 15px;
+        cursor: pointer;
+    }
 }
 
 @media screen and(max-width: 360px){
