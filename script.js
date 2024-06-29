@@ -13,11 +13,11 @@ function submitRequest(event){
     let params;
 
     if (value){
-        if (Engine === "Yandex"){
+        if (Engine === "yandex"){
             params = "search?text=";
-        } else if (Engine === "Google" || Engine === "Bing"){
+        } else if (Engine === "google" || Engine === "bing"){
             params = "search?q=";
-        } else if (Engine === "DuckDuckGo"){
+        } else if (Engine === "duckduckgo"){
             params = "?q=";
         }
     
