@@ -8,7 +8,6 @@ function submitRequest(event){
     event.preventDefault();
 
     const value = input.value;
-    
     const Engine = select.value;
     
     let params;
@@ -21,7 +20,6 @@ function submitRequest(event){
         } else if (Engine === "duckduckgo"){
             params = "?q=";
         }
-    
         window.location.href = `https://www.${Engine}.com/${params}` + value;
     }
 }

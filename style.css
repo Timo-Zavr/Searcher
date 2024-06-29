@@ -53,6 +53,21 @@ body {
     border-radius: 0 15px 15px 0;
     font-size: 35px;
     cursor: pointer;
+    display: block;
+}
+
+.button {
+    padding: 10px;
+    border: 3px solid #000000;
+    background-color: rgb(61, 61, 61);
+    color: rgb(84, 150, 19);
+    box-shadow: 3px 3px 3px 3px rgb(18, 18, 18);
+    background-image: url(./лупа.png);
+    border-left: none;
+    border-radius: 0 15px 15px 0;
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
 }
 
 .search__select {
@@ -67,17 +82,17 @@ body {
     cursor: pointer;
 }
 
-@media screen and(max-width: 650px){
+@media (max-width: 700px){
 
     .search {
-        height: 100%;
+        height: 70%;
         width: 50%;
         display: flex;
     }
     
     .search__input {
-        width: 50px;
-        padding: 5px;
+        width: 150px;
+        padding: 10px;
         border: 2px solid #000000;
         background-color: rgb(61, 61, 61);
         color: rgb(84, 150, 19);
@@ -91,11 +106,12 @@ body {
         align-items: baseline;
         justify-content: baseline;
         width: 30%;
-        margin: auto;
+        margin-left: 150px;
+        /* margin: 200, auto; */
     }
     
     .search__button {
-        padding: 5px;
+        padding: 10px;
         border: 2px solid #000000;
         background-color: rgb(61, 61, 61);
         color: rgb(84, 150, 19);
@@ -106,9 +122,9 @@ body {
     }
     
     .search__select {
-        width: 50px;
-        margin-left: 10px;
-        padding: 5px;
+        width: 140px;
+        margin-left: 5px;
+        padding: 10px;
         border: 2px solid #000000;
         background-color: rgb(61, 61, 61);
         color: rgb(84, 150, 19);
@@ -118,22 +134,22 @@ body {
     }
 }
 
-@media screen and(max-width: 360px){
+@media (max-width: 360px){
 
     .search {
-        height: 100%;
+        height: 50%;
         width: 50%;
         display: flex;
     }
     
     .search__input {
-        width: 50px;
+        width: 100px;
         padding: 5px;
         border: 2px solid #000000;
         background-color: rgb(61, 61, 61);
         color: rgb(84, 150, 19);
         border-radius: 15px 0 0 15px;
-        font-size: 15px;
+        font-size: 10px;
         outline: none;
     }
 
@@ -142,7 +158,8 @@ body {
         align-items: baseline;
         justify-content: baseline;
         width: 30%;
-        margin: auto;
+        margin-left: 110px;
+        /* margin: auto; */
     }
     
     .search__button {
@@ -152,19 +169,32 @@ body {
         color: rgb(84, 150, 19);
         border-left: none;
         border-radius: 0 15px 15px 0;
-        font-size: 15px;
+        font-size: 10px;
         cursor: pointer;
+        display: none;
+    }
+
+    .button {
+        padding: 5px;
+        border: 2px solid #000000;
+        background-color: rgb(61, 61, 61);
+        color: rgb(84, 150, 19);
+        border-left: none;
+        border-radius: 0 15px 15px 0;
+        font-size: 10px;
+        cursor: pointer;
+        display: block;
     }
     
     .search__select {
-        width: 50px;
-        margin-left: 10px;
+        width: 90px;
+        margin-left: 5px;
         padding: 5px;
         border: 2px solid #000000;
         background-color: rgb(61, 61, 61);
         color: rgb(84, 150, 19);
         border-radius: 15px;
-        font-size: 15px;
+        font-size: 10px;
         cursor: pointer;
     }
 }
